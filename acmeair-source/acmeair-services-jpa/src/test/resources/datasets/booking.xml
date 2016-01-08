@@ -1,0 +1,5 @@
+<!-- not working -->
+<dataset>
+    <booking id="booking-1" customerId="user-1" flightId="flight-1" flightSegmentId="flight-seg-1" dateOfBooking="1438531697625"/>
+    <booking id="booking-2" customerId="user-2" flightId="flight-2" flightSegmentId="flight-seg-2" dateOfBooking="1438531697625"/>
+</dataset>

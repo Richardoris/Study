@@ -1,0 +1,115 @@
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8" />
+<title>pyNmonAnalyzer Interactive Report 2015-12-16 09:51:36.390694 </title>
+<script type="text/javascript"
+  src="http://dygraphs.com/dygraph-dev.js"></script>
+</head>
+<body>
+<style>
+h2 {
+	font-family: sans-serif;
+	font-style: normal;
+	font-variant: normal;
+	font-weight: bold;
+	font-size: medium;
+}
+</style>
+<h2>CPU_ALL</h2></ br>
+ <div id="plot0"  style="width:1000px; height:300px;">loading...</div> </ br></ br> 
+<h2>DISKBUSY</h2></ br>
+ <div id="plot1"  style="width:1000px; height:300px;">loading...</div> </ br></ br> 
+<h2>MEM</h2></ br>
+ <div id="plot2"  style="width:1000px; height:300px;">loading...</div> </ br></ br> 
+<h2>NET</h2></ br>
+ <div id="plot3"  style="width:1000px; height:300px;">loading...</div> </ br></ br> 
+<script type="text/javascript">
+function setVisByColumnHeading(g, headings, labels){
+	vis=[]
+	// remove timestamp column
+	headings.splice(0,1);
+	
+	// figure out which columns we do and do not want
+	for( i in headings){
+		if(labels.indexOf(headings[i]) >= 0){
+			vis.push(true);
+		} else {
+			vis.push(false);
+		}
+	}
+	
+	// Update options
+	g.updateOptions({
+		visibility:vis
+	});
+}
+
+  var dataSources=[
+"csv/CPU_ALL.csv",
+"csv/DISKBUSY.csv",
+"csv/MEM.csv",
+"csv/NET.csv"  ];
+  
+  var specialOpts=[
+{stackedGraph: true, fillGraph: true,
+valueRange: [0.000000, 110.250000]},
+{valueRange: [0.000000, 110.250000]},
+{valueRange: [0.000000, 16412.865000]},
+{valueRange: [0.000000, 5481.735000]}  ];
+  
+  var displayCols=[
+["User%","Sys%","Wait%"],
+[""],
+["memtotal","active","inactive"],
+["eth0-read-KB/s","eth0-write-KB/s"]  ];
+
+  var gs = [];
+  var blockRedraw = false;
+  
+  for( x in dataSources){
+  	  console.log("creating.. "+dataSources[x]);
+	  gs.push(new Dygraph(
+	    document.getElementById("plot"+x),
+	    dataSources[x], // path to CSV file
+	    {
+	    rollPeriod: 2,
+	    showRoller: false,
+	    legend: 'always',
+	    labelsDivStyles: { 'textAlign': 'right' },
+	    showRangeSelector: true,
+	    rangeSelectorHeight: 50,
+	    rangeSelectorPlotStrokeColor: 'black',
+	    rangeSelectorPlotFillColor: 'gray',
+	    drawCallback: function(me, initial) {
+				if (blockRedraw){
+				    return;
+			       }
+				blockRedraw = true;
+				if(initial) {
+					console.log("Initial.. " + gs.length);
+					   for (var i = 0; i < gs.length; i++) {
+						    if(gs[i] == me){
+							    setVisByColumnHeading(gs[i], gs[i].getLabels(), displayCols[i]);
+							    gs[i].updateOptions(specialOpts[i]);
+						    }
+					    }
+					blockRedraw = false;
+					return;
+				}
+				var range = me.xAxisRange();
+				for (var j = 0; j < gs.length; j++) {
+					if (gs[j] == me) continue;
+					gs[j].updateOptions( {
+						dateWindow: range
+						} );
+				}
+				blockRedraw = false;
+		      }
+	    } // options
+	  )
+	 );
+  }
+</script>
+<center>Powered by <a href="http://dygraphs.com">dygraphs.js</a></center>
+</body>
+</html>

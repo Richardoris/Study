@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping package="com.acmeair.entities">
+    <class name="Customer" table="customer">
+
+        <id name="id" column="id" type="string"/>
+        <property name="password" column="password" type="string"/>
+        <property name="status" column="status" type="string"/>
+        <property name="total_miles" column="total_miles" type="int"/>
+        <property name="miles_ytd" column="total_miles" type="int"/>
+        <many-to-one name="address" column="address_id" class="CustomerAddress" not-null="true"/>
+        <property name="phoneNumber" column="phoneNumber" type="string"/>
+        <property name="phoneNumberType" column="phoneNumberType" type="string"/>
+
+    </class>
+
+
+</hibernate-mapping>

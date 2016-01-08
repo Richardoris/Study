@@ -1,0 +1,122 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Java PerformTest</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<!-- The secondlist -->
+    <link rel="stylesheet" type="text/css" href="http://static.hcharts.cn/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://static.hcharts.cn/jquery/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="http://www.hcharts.cn/demo/js/highcharts.js"></script>
+    <script type="text/javascript" src="http://www.hcharts.cn/demo/js/exporting.js"></script>
+
+    </head>
+<body>
+    
+
+
+    <div id="tps" style="height: 500px; min-width: 600px"></div>
+    <div id="rt" style="height: 500px; min-width: 600px"></div>
+
+
+    
+
+<script type="text/javascript">
+$(function () {
+    $('#tps').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'TPS对比图'
+        },
+        subtitle: {
+            text: 'Request Per Second'
+        },
+        xAxis: {
+            categories: {{conf['x']}}
+        },
+        yAxis: {
+            title: {
+                text: 'nums/sec'
+            }
+        },
+
+    plotOptions: {
+        spline: {
+            lineWidth: 1.5,
+            fillOpacity: 0.1,
+             marker: {
+                enabled: false,
+                states: {
+                    hover: {
+                        enabled: true,
+                        radius: 2
+                    }
+                }
+            },
+            shadow: false
+        }
+    },
+        series: [{
+            name: '{{conf['name1']}}',
+            data: {{conf['ori_tps']}}
+        }, {
+            name: '{{conf['name2']}}',
+            data: {{conf['ori_tps_later']}}
+        }]
+    });
+});
+
+
+
+
+$(function () {
+    $('#rt').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'RT对比图'
+        },
+        subtitle: {
+            text: 'response time(avg)'
+        },
+        xAxis: {
+            categories: {{conf['x']}}
+        },
+        yAxis: {
+            title: {
+                text: 'response (ms)'
+            }
+        },
+        plotOptions: {
+        spline: {
+            lineWidth: 1.5,
+            fillOpacity: 0.1,
+             marker: {
+                enabled: false,
+                states: {
+                    hover: {
+                        enabled: true,
+                        radius: 2
+                    }
+                }
+            },
+            shadow: false
+        }
+    },
+        series: [{
+            name: '{{conf['name1']}}',
+            data: {{conf['ori_rt']}}
+        }, {
+            name: '{{conf['name2']}}',
+            data: {{conf['ori_rt_later']}}
+        }]
+    });
+});
+</script>    
+
+
+</body>
+</html>

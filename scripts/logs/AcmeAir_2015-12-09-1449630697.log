@@ -1,0 +1,733 @@
+2015/12/09 03:11:38 INFO  - jmeter.util.JMeterUtils: Setting Locale to en_US 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: Loading user properties from: /opt/apache-jmeter/bin/user.properties 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: Loading system properties from: /opt/apache-jmeter/bin/system.properties 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: Copyright (c) 1998-2015 The Apache Software Foundation 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: Version 2.13 r1665067 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: java.version=1.8.0_65 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: java.vm.name=Java HotSpot(TM) 64-Bit Server VM 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: os.name=Linux 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: os.arch=amd64 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: os.version=3.13.0-68-generic 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: file.encoding=UTF-8 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: Default Locale=English (United States) 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: JMeter  Locale=English (United States) 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: JMeterHome=/opt/apache-jmeter 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: user.dir  =/home/ubuntu/acmeair-source/acmeair-driver/src/main/scripts 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: PWD       =/home/ubuntu/acmeair-source/acmeair-driver/src/main/scripts 
+2015/12/09 03:11:38 INFO  - jmeter.JMeter: IP: 10.128.17.193 Name: acmeair-leling-server1 FullName: acmeair-leling-server1.novalocal 
+2015/12/09 03:11:38 INFO  - jmeter.services.FileServer: Default base='/home/ubuntu/acmeair-source/acmeair-driver/src/main/scripts' 
+2015/12/09 03:11:38 INFO  - jmeter.services.FileServer: Set new base='/home/ubuntu/acmeair-source/acmeair-driver/src/main/scripts' 
+2015/12/09 03:11:38 INFO  - jmeter.save.SaveService: Testplan (JMX) version: 2.2. Testlog (JTL) version: 2.2 
+2015/12/09 03:11:38 INFO  - jmeter.save.SaveService: Using SaveService properties file encoding UTF-8 
+2015/12/09 03:11:38 INFO  - jmeter.save.SaveService: Using SaveService properties file version 1656252 
+2015/12/09 03:11:38 INFO  - jmeter.save.SaveService: Using SaveService properties version 2.8 
+2015/12/09 03:11:38 INFO  - jmeter.save.SaveService: All converter versions present and correct 
+2015/12/09 03:11:38 INFO  - jmeter.save.SaveService: Loading file: AcmeAir.jmx 
+2015/12/09 03:11:38 INFO  - jmeter.protocol.http.control.CookieManager: Settings: Delete null: true Check: true Allow variable: true Save: false Prefix: COOKIE_ 
+2015/12/09 03:11:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Cannot find .className property for htmlParser, using default 
+2015/12/09 03:11:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/html is  
+2015/12/09 03:11:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xhtml+xml is  
+2015/12/09 03:11:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for application/xml is  
+2015/12/09 03:11:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/xml is  
+2015/12/09 03:11:38 INFO  - jmeter.protocol.http.sampler.HTTPSamplerBase: Parser for text/vnd.wap.wml is org.apache.jmeter.protocol.http.parser.RegexpHTMLParser 
+2015/12/09 03:11:39 INFO  - jmeter.JMeter: Creating summariser <summary> 
+2015/12/09 03:11:39 INFO  - jmeter.engine.StandardJMeterEngine: Listeners will be started after enabling running version 
+2015/12/09 03:11:39 INFO  - jmeter.engine.StandardJMeterEngine: To revert to the earlier behaviour, define jmeterengine.startlistenerslater=false 
+2015/12/09 03:11:39 INFO  - jmeter.engine.StandardJMeterEngine: Running the test! 
+2015/12/09 03:11:39 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [FLIGHTTOCOUNT, FLIGHTRETCOUNT, ONEWAY] 
+2015/12/09 03:11:39 INFO  - jmeter.samplers.SampleEvent: List of sample_variables: [FLIGHTTOCOUNT, FLIGHTRETCOUNT, ONEWAY] 
+2015/12/09 03:11:39 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must contain the string: '.functions.' 
+2015/12/09 03:11:39 INFO  - jmeter.engine.util.CompoundVariable: Note: Function class names must not contain the string: '.gui.' 
+2015/12/09 03:11:39 WARN  - jmeter.reporters.ResultCollector: Unexpected EOF trying to find XML end marker in   
+2015/12/09 03:11:39 INFO  - jmeter.JMeter: Running test (1449630699323) 
+2015/12/09 03:11:39 INFO  - jmeter.engine.StandardJMeterEngine: Starting ThreadGroup: 1 : Thread Group 
+2015/12/09 03:11:39 INFO  - jmeter.engine.StandardJMeterEngine: Starting 200 threads for group Thread Group. 
+2015/12/09 03:11:39 INFO  - jmeter.engine.StandardJMeterEngine: Thread will continue on error 
+2015/12/09 03:11:39 INFO  - jmeter.threads.ThreadGroup: Starting thread group number 1 threads 200 ramp-up 200 perThread 1000.0 delayedStart=false 
+2015/12/09 03:11:39 INFO  - jmeter.threads.JMeterThread: jmeterthread.startearlier=true (see jmeter.properties) 
+2015/12/09 03:11:39 INFO  - jmeter.threads.JMeterThread: Running PostProcessors in forward order 
+2015/12/09 03:11:40 INFO  - jmeter.threads.ThreadGroup: Started thread group number 1 
+2015/12/09 03:11:40 INFO  - jmeter.engine.StandardJMeterEngine: All thread groups have been started 
+2015/12/09 03:11:49 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-1 
+2015/12/09 03:11:49 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1083528694 
+2015/12/09 03:11:49 INFO  - jmeter.protocol.http.sampler.HTTPHCAbstractImpl: Local host = acmeair-leling-server1 
+2015/12/09 03:11:49 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: HTTP request retry count = 0 
+2015/12/09 03:11:49 INFO  - jmeter.protocol.http.sampler.HTTPHC4Impl: Setting up HTTPS TrustAll scheme 
+2015/12/09 03:11:49 INFO  - jmeter.util.JsseSSLManager: Using default SSL protocol: TLS 
+2015/12/09 03:11:49 INFO  - jmeter.util.JsseSSLManager: SSL session context: per-thread 
+2015/12/09 03:11:49 INFO  - jmeter.samplers.SampleResult: Note: Sample TimeStamps are START times 
+2015/12/09 03:11:49 INFO  - jmeter.samplers.SampleResult: sampleresult.default.encoding is set to ISO-8859-1 
+2015/12/09 03:11:49 INFO  - jmeter.samplers.SampleResult: sampleresult.useNanoTime=true 
+2015/12/09 03:11:49 INFO  - jmeter.samplers.SampleResult: sampleresult.nanoThreadSleep=5000 
+2015/12/09 03:11:50 INFO  - jmeter.services.FileServer: Stored: Airports2.csv 
+2015/12/09 03:11:50 INFO  - jmeter.services.FileServer: Stored: Airports.csv 
+2015/12/09 03:11:50 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-2 
+2015/12/09 03:11:50 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1043979752 
+2015/12/09 03:11:51 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-3 
+2015/12/09 03:11:51 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@467889066 
+2015/12/09 03:11:52 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-4 
+2015/12/09 03:11:52 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1818270737 
+2015/12/09 03:11:53 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-5 
+2015/12/09 03:11:53 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@248820211 
+2015/12/09 03:11:54 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-6 
+2015/12/09 03:11:54 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1201070395 
+2015/12/09 03:11:55 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-7 
+2015/12/09 03:11:55 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@69115684 
+2015/12/09 03:11:56 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-8 
+2015/12/09 03:11:56 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@634684053 
+2015/12/09 03:11:57 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-9 
+2015/12/09 03:11:57 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@220095088 
+2015/12/09 03:11:58 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-10 
+2015/12/09 03:11:58 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1832064677 
+2015/12/09 03:11:59 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-11 
+2015/12/09 03:11:59 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@180738942 
+2015/12/09 03:12:00 INFO  - jmeter.reporters.Summariser: summary +   4424 in    21s =  213.9/s Avg:    12 Min:     4 Max:   220 Err:     0 (0.00%) Active: 11 Started: 11 Finished: 0 
+2015/12/09 03:12:00 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-12 
+2015/12/09 03:12:00 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@957509963 
+2015/12/09 03:12:01 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-13 
+2015/12/09 03:12:01 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1058685066 
+2015/12/09 03:12:02 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-14 
+2015/12/09 03:12:02 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1710425315 
+2015/12/09 03:12:03 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-15 
+2015/12/09 03:12:03 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@214132834 
+2015/12/09 03:12:04 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-16 
+2015/12/09 03:12:04 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@750660260 
+2015/12/09 03:12:05 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-17 
+2015/12/09 03:12:05 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@156746308 
+2015/12/09 03:12:06 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-18 
+2015/12/09 03:12:06 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@671168826 
+2015/12/09 03:12:07 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-19 
+2015/12/09 03:12:07 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1042893611 
+2015/12/09 03:12:08 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-20 
+2015/12/09 03:12:08 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@354184786 
+2015/12/09 03:12:09 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-21 
+2015/12/09 03:12:09 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1485405304 
+2015/12/09 03:12:10 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-22 
+2015/12/09 03:12:10 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@557051606 
+2015/12/09 03:12:11 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-23 
+2015/12/09 03:12:11 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@179645382 
+2015/12/09 03:12:12 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-24 
+2015/12/09 03:12:12 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1677326780 
+2015/12/09 03:12:13 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-25 
+2015/12/09 03:12:13 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@521678178 
+2015/12/09 03:12:14 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-26 
+2015/12/09 03:12:14 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1396201454 
+2015/12/09 03:12:15 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-27 
+2015/12/09 03:12:15 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@857820792 
+2015/12/09 03:12:16 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-28 
+2015/12/09 03:12:16 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1748485831 
+2015/12/09 03:12:17 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-29 
+2015/12/09 03:12:17 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1420112542 
+2015/12/09 03:12:18 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-30 
+2015/12/09 03:12:18 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1707790269 
+2015/12/09 03:12:19 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-31 
+2015/12/09 03:12:19 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@901869550 
+2015/12/09 03:12:20 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-32 
+2015/12/09 03:12:20 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@964182772 
+2015/12/09 03:12:21 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-33 
+2015/12/09 03:12:21 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1415707755 
+2015/12/09 03:12:22 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-34 
+2015/12/09 03:12:22 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1975580884 
+2015/12/09 03:12:23 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-35 
+2015/12/09 03:12:23 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1425260818 
+2015/12/09 03:12:24 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-36 
+2015/12/09 03:12:24 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1007625278 
+2015/12/09 03:12:25 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-37 
+2015/12/09 03:12:25 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1374823995 
+2015/12/09 03:12:26 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-38 
+2015/12/09 03:12:26 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1436331153 
+2015/12/09 03:12:27 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-39 
+2015/12/09 03:12:27 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1245863816 
+2015/12/09 03:12:28 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-40 
+2015/12/09 03:12:28 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@762613151 
+2015/12/09 03:12:29 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-41 
+2015/12/09 03:12:29 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1538040847 
+2015/12/09 03:12:30 INFO  - jmeter.reporters.Summariser: summary +  30512 in    30s = 1017.2/s Avg:    25 Min:     3 Max:   370 Err:     3 (0.01%) Active: 41 Started: 41 Finished: 0 
+2015/12/09 03:12:30 INFO  - jmeter.reporters.Summariser: summary =  34936 in    51s =  689.4/s Avg:    23 Min:     3 Max:   370 Err:     3 (0.01%) 
+2015/12/09 03:12:30 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-42 
+2015/12/09 03:12:30 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1026101101 
+2015/12/09 03:12:31 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-43 
+2015/12/09 03:12:31 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1148564825 
+2015/12/09 03:12:32 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-44 
+2015/12/09 03:12:32 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1966736117 
+2015/12/09 03:12:33 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-45 
+2015/12/09 03:12:33 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@2117716183 
+2015/12/09 03:12:34 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-46 
+2015/12/09 03:12:34 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@372338925 
+2015/12/09 03:12:35 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-47 
+2015/12/09 03:12:35 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@726042292 
+2015/12/09 03:12:36 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-48 
+2015/12/09 03:12:36 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@530340895 
+2015/12/09 03:12:37 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-49 
+2015/12/09 03:12:37 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1199819886 
+2015/12/09 03:12:38 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-50 
+2015/12/09 03:12:38 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1996169187 
+2015/12/09 03:12:39 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-51 
+2015/12/09 03:12:39 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1183622509 
+2015/12/09 03:12:40 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-52 
+2015/12/09 03:12:40 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@863602801 
+2015/12/09 03:12:41 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-53 
+2015/12/09 03:12:41 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@753107559 
+2015/12/09 03:12:42 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-54 
+2015/12/09 03:12:42 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1956188733 
+2015/12/09 03:12:43 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-55 
+2015/12/09 03:12:43 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@354630935 
+2015/12/09 03:12:44 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-56 
+2015/12/09 03:12:44 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@463338246 
+2015/12/09 03:12:45 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-57 
+2015/12/09 03:12:45 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1615087469 
+2015/12/09 03:12:46 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-58 
+2015/12/09 03:12:46 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@763651759 
+2015/12/09 03:12:47 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-59 
+2015/12/09 03:12:47 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@449518250 
+2015/12/09 03:12:48 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-60 
+2015/12/09 03:12:48 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@308900574 
+2015/12/09 03:12:49 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-61 
+2015/12/09 03:12:49 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@726684655 
+2015/12/09 03:12:50 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-62 
+2015/12/09 03:12:50 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1890967521 
+2015/12/09 03:12:51 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-63 
+2015/12/09 03:12:51 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1680014927 
+2015/12/09 03:12:52 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-64 
+2015/12/09 03:12:52 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@203731350 
+2015/12/09 03:12:53 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-65 
+2015/12/09 03:12:53 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1427824748 
+2015/12/09 03:12:54 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-66 
+2015/12/09 03:12:54 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@957073808 
+2015/12/09 03:12:55 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-67 
+2015/12/09 03:12:55 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@54087080 
+2015/12/09 03:12:56 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-68 
+2015/12/09 03:12:56 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@406941145 
+2015/12/09 03:12:57 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-69 
+2015/12/09 03:12:57 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1006029737 
+2015/12/09 03:12:58 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-70 
+2015/12/09 03:12:58 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@2099110939 
+2015/12/09 03:12:59 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-71 
+2015/12/09 03:12:59 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1761782587 
+2015/12/09 03:13:00 INFO  - jmeter.reporters.Summariser: summary +  31411 in    30s = 1047.1/s Avg:    53 Min:     3 Max:   582 Err:     0 (0.00%) Active: 71 Started: 71 Finished: 0 
+2015/12/09 03:13:00 INFO  - jmeter.reporters.Summariser: summary =  66347 in    81s =  822.4/s Avg:    37 Min:     3 Max:   582 Err:     3 (0.00%) 
+2015/12/09 03:13:00 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-72 
+2015/12/09 03:13:00 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@830224512 
+2015/12/09 03:13:01 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-73 
+2015/12/09 03:13:01 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1012605947 
+2015/12/09 03:13:02 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-74 
+2015/12/09 03:13:02 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1178736776 
+2015/12/09 03:13:03 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-75 
+2015/12/09 03:13:03 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@163824808 
+2015/12/09 03:13:04 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-76 
+2015/12/09 03:13:04 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1611494847 
+2015/12/09 03:13:05 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-77 
+2015/12/09 03:13:05 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1929754297 
+2015/12/09 03:13:06 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-78 
+2015/12/09 03:13:06 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1397921073 
+2015/12/09 03:13:07 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-79 
+2015/12/09 03:13:07 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@21715597 
+2015/12/09 03:13:08 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-80 
+2015/12/09 03:13:08 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@318018845 
+2015/12/09 03:13:09 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-81 
+2015/12/09 03:13:09 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1451722961 
+2015/12/09 03:13:10 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-82 
+2015/12/09 03:13:10 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@593574862 
+2015/12/09 03:13:11 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-83 
+2015/12/09 03:13:11 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1073132629 
+2015/12/09 03:13:12 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-84 
+2015/12/09 03:13:12 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1916372112 
+2015/12/09 03:13:13 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-85 
+2015/12/09 03:13:13 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@844827970 
+2015/12/09 03:13:14 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-86 
+2015/12/09 03:13:14 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@2088409630 
+2015/12/09 03:13:15 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-87 
+2015/12/09 03:13:15 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1778669781 
+2015/12/09 03:13:16 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-88 
+2015/12/09 03:13:16 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@577488007 
+2015/12/09 03:13:17 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-89 
+2015/12/09 03:13:17 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1724405785 
+2015/12/09 03:13:18 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-90 
+2015/12/09 03:13:18 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1077376961 
+2015/12/09 03:13:19 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-91 
+2015/12/09 03:13:19 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@989895209 
+2015/12/09 03:13:20 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-92 
+2015/12/09 03:13:20 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1671174260 
+2015/12/09 03:13:21 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-93 
+2015/12/09 03:13:21 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@419679522 
+2015/12/09 03:13:22 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-94 
+2015/12/09 03:13:22 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@706296644 
+2015/12/09 03:13:23 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-95 
+2015/12/09 03:13:23 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@703865439 
+2015/12/09 03:13:24 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-96 
+2015/12/09 03:13:24 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@2093145990 
+2015/12/09 03:13:25 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-97 
+2015/12/09 03:13:25 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1659290667 
+2015/12/09 03:13:26 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-98 
+2015/12/09 03:13:26 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@644495758 
+2015/12/09 03:13:27 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-99 
+2015/12/09 03:13:27 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1346085427 
+2015/12/09 03:13:28 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-100 
+2015/12/09 03:13:28 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1500326906 
+2015/12/09 03:13:29 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-101 
+2015/12/09 03:13:29 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1493286186 
+2015/12/09 03:13:30 INFO  - jmeter.reporters.Summariser: summary +  29406 in    30s =  980.2/s Avg:    87 Min:     2 Max:  1279 Err:     7 (0.02%) Active: 101 Started: 101 Finished: 0 
+2015/12/09 03:13:30 INFO  - jmeter.reporters.Summariser: summary =  95753 in   111s =  865.2/s Avg:    52 Min:     2 Max:  1279 Err:    10 (0.01%) 
+2015/12/09 03:13:30 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-102 
+2015/12/09 03:13:30 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1727609936 
+2015/12/09 03:13:31 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-103 
+2015/12/09 03:13:31 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1555485709 
+2015/12/09 03:13:32 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-104 
+2015/12/09 03:13:32 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@2115834454 
+2015/12/09 03:13:33 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-105 
+2015/12/09 03:13:33 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@389097848 
+2015/12/09 03:13:34 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-106 
+2015/12/09 03:13:34 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@397841868 
+2015/12/09 03:13:34 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:34 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-18 
+2015/12/09 03:13:35 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-107 
+2015/12/09 03:13:35 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1048716800 
+2015/12/09 03:13:36 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-108 
+2015/12/09 03:13:36 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1670923417 
+2015/12/09 03:13:37 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-109 
+2015/12/09 03:13:37 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1864778570 
+2015/12/09 03:13:38 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-110 
+2015/12/09 03:13:38 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1553256906 
+2015/12/09 03:13:38 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:38 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-86 
+2015/12/09 03:13:39 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-111 
+2015/12/09 03:13:39 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1046934524 
+2015/12/09 03:13:40 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:40 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-92 
+2015/12/09 03:13:40 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-112 
+2015/12/09 03:13:40 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@692250350 
+2015/12/09 03:13:40 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:40 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-13 
+2015/12/09 03:13:40 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:40 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-6 
+2015/12/09 03:13:41 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-113 
+2015/12/09 03:13:41 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1942853320 
+2015/12/09 03:13:42 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-114 
+2015/12/09 03:13:42 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@632547067 
+2015/12/09 03:13:42 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:42 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-25 
+2015/12/09 03:13:43 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-115 
+2015/12/09 03:13:43 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1267506609 
+2015/12/09 03:13:44 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-116 
+2015/12/09 03:13:44 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@187213991 
+2015/12/09 03:13:45 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-117 
+2015/12/09 03:13:45 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@672774477 
+2015/12/09 03:13:45 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:45 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-71 
+2015/12/09 03:13:46 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-118 
+2015/12/09 03:13:46 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@2062586367 
+2015/12/09 03:13:46 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:46 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-37 
+2015/12/09 03:13:46 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:46 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-19 
+2015/12/09 03:13:47 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-119 
+2015/12/09 03:13:47 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1526506892 
+2015/12/09 03:13:48 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-120 
+2015/12/09 03:13:48 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@359348984 
+2015/12/09 03:13:48 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:48 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-62 
+2015/12/09 03:13:49 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:49 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-83 
+2015/12/09 03:13:49 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:49 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-27 
+2015/12/09 03:13:49 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+	at com.acmeair.jmeter.functions.ExtractFlightsInfoFunction.execute(ExtractFlightsInfoFunction.java:76)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:142)
+	at org.apache.jmeter.engine.util.CompoundVariable.execute(CompoundVariable.java:118)
+	at org.apache.jmeter.testelement.property.FunctionProperty.getStringValue(FunctionProperty.java:101)
+	at org.apache.jmeter.testelement.AbstractTestElement.getPropertyAsString(AbstractTestElement.java:274)
+	at org.apache.jmeter.control.IfController.getCondition(IfController.java:97)
+	at org.apache.jmeter.control.IfController.next(IfController.java:170)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:226)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.control.GenericController.nextIsAController(GenericController.java:229)
+	at org.apache.jmeter.control.GenericController.next(GenericController.java:180)
+	at org.apache.jmeter.control.LoopController.next(LoopController.java:123)
+	at org.apache.jmeter.threads.AbstractThreadGroup.next(AbstractThreadGroup.java:88)
+	at org.apache.jmeter.threads.JMeterThread.run(JMeterThread.java:284)
+	at java.lang.Thread.run(Thread.java:745)
+
+2015/12/09 03:13:49 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-52 
+2015/12/09 03:13:49 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-121 
+2015/12/09 03:13:49 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1691038006 
+2015/12/09 03:13:50 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-122 
+2015/12/09 03:13:50 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1842625499 
+2015/12/09 03:13:51 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-123 
+2015/12/09 03:13:51 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@31046922 
+2015/12/09 03:13:52 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:13:52 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-24 
+2015/12/09 03:13:52 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-124 
+2015/12/09 03:13:52 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1431422955 
+2015/12/09 03:13:53 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-125 
+2015/12/09 03:13:53 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@846466367 
+2015/12/09 03:13:53 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:13:53 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-125 
+2015/12/09 03:13:53 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:13:53 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-82 
+2015/12/09 03:13:54 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-126 
+2015/12/09 03:13:54 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@459578783 
+2015/12/09 03:13:55 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-127 
+2015/12/09 03:13:55 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@328780267 
+2015/12/09 03:13:55 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:13:55 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-48 
+2015/12/09 03:13:55 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:13:55 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-109 
+2015/12/09 03:13:56 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-128 
+2015/12/09 03:13:56 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@269091943 
+2015/12/09 03:13:57 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:13:57 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-95 
+2015/12/09 03:13:57 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-129 
+2015/12/09 03:13:57 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@283478546 
+2015/12/09 03:13:58 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:13:58 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-118 
+2015/12/09 03:13:58 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-130 
+2015/12/09 03:13:58 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1730452291 
+2015/12/09 03:13:58 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:13:58 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-68 
+2015/12/09 03:13:59 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-131 
+2015/12/09 03:13:59 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@39185497 
+2015/12/09 03:14:00 INFO  - jmeter.reporters.Summariser: summary +  37634 in    30s = 1254.0/s Avg:    84 Min:     2 Max:   796 Err:  6959 (18.49%) Active: 110 Started: 131 Finished: 21 
+2015/12/09 03:14:00 INFO  - jmeter.reporters.Summariser: summary = 133387 in   141s =  948.1/s Avg:    61 Min:     2 Max:  1279 Err:  6969 (5.22%) 
+2015/12/09 03:14:00 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:00 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-74 
+2015/12/09 03:14:00 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-132 
+2015/12/09 03:14:00 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@2135266440 
+2015/12/09 03:14:01 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-133 
+2015/12/09 03:14:01 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1913429495 
+2015/12/09 03:14:02 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-134 
+2015/12/09 03:14:02 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@565936427 
+2015/12/09 03:14:03 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-135 
+2015/12/09 03:14:03 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@850129381 
+2015/12/09 03:14:03 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:03 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-130 
+2015/12/09 03:14:03 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:03 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-114 
+2015/12/09 03:14:04 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:04 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-93 
+2015/12/09 03:14:04 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-136 
+2015/12/09 03:14:04 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@804153504 
+2015/12/09 03:14:04 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:04 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-106 
+2015/12/09 03:14:05 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:05 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-117 
+2015/12/09 03:14:05 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-137 
+2015/12/09 03:14:05 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1442219927 
+2015/12/09 03:14:05 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:05 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-15 
+2015/12/09 03:14:06 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:06 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-50 
+2015/12/09 03:14:06 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-138 
+2015/12/09 03:14:06 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1688270509 
+2015/12/09 03:14:06 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:06 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-51 
+2015/12/09 03:14:07 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:07 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-133 
+2015/12/09 03:14:07 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-139 
+2015/12/09 03:14:07 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1907637744 
+2015/12/09 03:14:07 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:07 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-3 
+2015/12/09 03:14:07 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:07 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-89 
+2015/12/09 03:14:07 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:07 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-69 
+2015/12/09 03:14:08 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-140 
+2015/12/09 03:14:08 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1890345355 
+2015/12/09 03:14:09 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-141 
+2015/12/09 03:14:09 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1983331432 
+2015/12/09 03:14:10 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-142 
+2015/12/09 03:14:10 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@2004619626 
+2015/12/09 03:14:11 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-143 
+2015/12/09 03:14:11 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1818096589 
+2015/12/09 03:14:11 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:11 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-35 
+2015/12/09 03:14:11 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:11 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-128 
+2015/12/09 03:14:11 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:11 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-67 
+2015/12/09 03:14:12 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-144 
+2015/12/09 03:14:12 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@12981413 
+2015/12/09 03:14:12 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:12 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-54 
+2015/12/09 03:14:12 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:12 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-137 
+2015/12/09 03:14:12 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:12 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-123 
+2015/12/09 03:14:12 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:12 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-21 
+2015/12/09 03:14:12 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:12 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-105 
+2015/12/09 03:14:12 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:12 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-57 
+2015/12/09 03:14:12 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:12 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-32 
+2015/12/09 03:14:13 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-145 
+2015/12/09 03:14:13 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1109464162 
+2015/12/09 03:14:14 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-146 
+2015/12/09 03:14:14 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@589834033 
+2015/12/09 03:14:15 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-147 
+2015/12/09 03:14:15 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1374516794 
+2015/12/09 03:14:16 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-148 
+2015/12/09 03:14:16 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1667526337 
+2015/12/09 03:14:17 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-149 
+2015/12/09 03:14:17 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@496774937 
+2015/12/09 03:14:18 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-150 
+2015/12/09 03:14:18 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@2109443116 
+2015/12/09 03:14:19 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-151 
+2015/12/09 03:14:19 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@466215024 
+2015/12/09 03:14:20 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-152 
+2015/12/09 03:14:20 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1338522888 
+2015/12/09 03:14:21 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:21 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-119 
+2015/12/09 03:14:21 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:21 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-10 
+2015/12/09 03:14:21 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-153 
+2015/12/09 03:14:21 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@328808280 
+2015/12/09 03:14:22 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-154 
+2015/12/09 03:14:22 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1421437112 
+2015/12/09 03:14:23 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-155 
+2015/12/09 03:14:23 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@653298127 
+2015/12/09 03:14:24 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-156 
+2015/12/09 03:14:24 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@2017007086 
+2015/12/09 03:14:25 ERROR - jmeter.threads.JMeterThread: Test failed! java.lang.NullPointerException
+
+2015/12/09 03:14:25 INFO  - jmeter.threads.JMeterThread: Thread finished: Thread Group 1-14 
+2015/12/09 03:14:25 INFO  - jmeter.threads.JMeterThread: Thread started: Thread Group 1-157 
+2015/12/09 03:14:25 INFO  - jmeter.services.FileServer: Stored: hosts.csv Alias: hosts.csv@1369121557 

@@ -1,0 +1,219 @@
+<html>
+<head>
+	<meta charset="utf-8">
+    <title>Java PerformTest</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="">
+	<!-- The secondlist -->
+    <link rel="stylesheet" type="text/css" href="http://static.hcharts.cn/css/bootstrap.min.css">
+    <script type="text/javascript" src="http://static.hcharts.cn/jquery/jquery-2.0.2.min.js"></script>
+    <script type="text/javascript" src="http://www.hcharts.cn/demo/js/highcharts.js"></script>
+    <script type="text/javascript" src="http://www.hcharts.cn/demo/js/exporting.js"></script>
+
+    </head>
+<body>
+    
+
+
+    <div id="cpu" style="height: 500px; min-width: 600px"></div>
+    <div id="mem" style="height: 500px; min-width: 600px"></div>
+    <div id="eth0_read" style="height: 500px; min-width: 600px"></div>
+    <div id="eth0_write" style="height: 500px; min-width: 600px"></div>
+
+
+    
+
+<script type="text/javascript">
+$(function () {
+    $('#cpu').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'cpu对比图'
+        },
+        subtitle: {
+            text: 'cpu 利用率'
+        },
+        xAxis: {
+            tickInterval: {{conf['interval']}},
+            categories: {{conf['x']}}
+        },
+        yAxis: {
+            title: {
+                text: '%'
+            }
+        },
+
+    plotOptions: {
+        spline: {
+            lineWidth: 1.5,
+            fillOpacity: 0.1,
+             marker: {
+                enabled: false,
+                states: {
+                    hover: {
+                        enabled: true,
+                        radius: 2
+                    }
+                }
+            },
+            shadow: false
+        }
+    },
+        series: [{
+            name: '{{conf['name1']}}',
+            data: {{conf['ori_cpu']}}
+        }, {
+            name: '{{conf['name2']}}',
+            data: {{conf['ori_cpu_later']}}
+        }]
+    });
+});
+
+
+
+
+$(function () {
+    $('#mem').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'mem对比图'
+        },
+        subtitle: {
+            text: 'mem active use'
+        },
+        xAxis: {
+            tickInterval: {{conf['interval']}},
+            categories: {{conf['x']}}
+        },
+        yAxis: {
+            title: {
+                text: 'MB'
+            }
+        },
+        plotOptions: {
+        spline: {
+            lineWidth: 1.5,
+            fillOpacity: 0.1,
+             marker: {
+                enabled: false,
+                states: {
+                    hover: {
+                        enabled: true,
+                        radius: 2
+                    }
+                }
+            },
+            shadow: false
+        }
+    },
+        series: [{
+            name: '{{conf['name1']}}',
+            data: {{conf['ori_mem']}}
+        }, {
+            name: '{{conf['name2']}}',
+            data: {{conf['ori_mem_later']}}
+        }]
+    });
+});
+
+$(function () {
+    $('#eth0_read').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'eth0_read对比图'
+        },
+        subtitle: {
+            text: 'io read'
+        },
+        xAxis: {
+            tickInterval: {{conf['interval']}},
+            categories: {{conf['x']}}
+        },
+        yAxis: {
+            title: {
+                text: 'KB/s'
+            }
+        },
+        plotOptions: {
+        spline: {
+            lineWidth: 1.5,
+            fillOpacity: 0.1,
+             marker: {
+                enabled: false,
+                states: {
+                    hover: {
+                        enabled: true,
+                        radius: 2
+                    }
+                }
+            },
+            shadow: false
+        }
+    },
+        series: [{
+            name: '{{conf['name1']}}',
+            data: {{conf['ori_eth0_read']}}
+        }, {
+            name: '{{conf['name2']}}',
+            data: {{conf['ori_eth0_read_later']}}
+        }]
+    });
+});
+
+$(function () {
+    $('#eth0_write').highcharts({
+        chart: {
+            type: 'line'
+        },
+        title: {
+            text: 'eth0_write对比图'
+        },
+        subtitle: {
+            text: 'io write'
+        },
+        xAxis: {
+            tickInterval: {{conf['interval']}},
+            categories: {{conf['x']}}
+        },
+        yAxis: {
+            title: {
+                text: 'KB/s'
+            }
+        },
+        plotOptions: {
+        spline: {
+            lineWidth: 1.5,
+            fillOpacity: 0.1,
+             marker: {
+                enabled: false,
+                states: {
+                    hover: {
+                        enabled: true,
+                        radius: 2
+                    }
+                }
+            },
+            shadow: false
+        }
+    },
+        series: [{
+            name: '{{conf['name1']}}',
+            data: {{conf['ori_eth0_write']}}
+        }, {
+            name: '{{conf['name2']}}',
+            data: {{conf['ori_eth0_write_later']}}
+        }]
+    });
+});
+
+</script>    
+
+
+</body>
+</html>
